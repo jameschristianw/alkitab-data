@@ -1,0 +1,43 @@
+{
+    "type": "TB",
+    "books": {
+        "old_testament": [
+            {
+                "bookname": "bookname",
+                "chapter_count": "chapter_count",
+                "book_number": "book_number",
+                "chapters": [
+                    {
+                        "chapter_number": "chapter_number",
+                        "verses": [
+                            {
+                                "number": "number",
+                                "title": "title",
+                                "text": "text"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "new_testament": [
+            {
+                "bookname": "bookname",
+                "chapter_count": "chapter_count",
+                "book_number": "book_number",
+                "chapters": [
+                    {
+                        "chapter_number": "chapter_number",
+                        "verses": [
+                            {
+                                "number": "number",
+                                "title": "title",
+                                "text": "text"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+}
