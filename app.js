@@ -15,6 +15,8 @@ let oldBooks = []
 let newBooks = []
 
 const asyncApiCall = async () => {
+    let version = "v2"
+
     for(let currentBook = 1; currentBook <= bookCount; currentBook++) {
         currentChapter = 1
         chapterCount = 999
@@ -73,7 +75,7 @@ const asyncApiCall = async () => {
             ]
         }
 
-        fs.writeFile(`books/${bookname}.json`, JSON.stringify(newBook), (err) => {
+        fs.writeFile(`books/${version}/${bookname}.json`, JSON.stringify(newBook, null, 2), (err) => {
             console.log(`Finish writing ${bookname}`);
         })
     }
@@ -86,7 +88,7 @@ const asyncApiCall = async () => {
         }
     }
 
-    fs.writeFile(`books/Alkitab.json`, JSON.stringify(bible), (err) => {
+    fs.writeFile(`books/${version}/Alkitab.json`, JSON.stringify(bible, null, 2), (err) => {
         console.log(`Finish writing Alkitab`);
     })
 }
